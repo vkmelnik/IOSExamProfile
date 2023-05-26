@@ -14,6 +14,11 @@
 		DA0A0C412A21087600AABA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0A0C3F2A21087600AABA86 /* LaunchScreen.storyboard */; };
 		DA0A0C492A2108F300AABA86 /* UIView+Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C482A2108F300AABA86 /* UIView+Pin.swift */; };
 		DA0A0C4D2A21093B00AABA86 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C4C2A21093B00AABA86 /* ProfileModel.swift */; };
+		DA0A0C522A210A4E00AABA86 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C512A210A4E00AABA86 /* ProfileView.swift */; };
+		DA0A0C552A21129600AABA86 /* ProfileStorageLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C542A21129600AABA86 /* ProfileStorageLogic.swift */; };
+		DA0A0C572A2112A700AABA86 /* ProfileStorageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C562A2112A700AABA86 /* ProfileStorageWorker.swift */; };
+		DA0A0C592A211A6A00AABA86 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C582A211A6A00AABA86 /* ImagePickerController.swift */; };
+		DA0A0C5B2A211CFC00AABA86 /* UIImage+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0A0C5A2A211CFC00AABA86 /* UIImage+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		DA0A0C482A2108F300AABA86 /* UIView+Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Pin.swift"; sourceTree = "<group>"; };
 		DA0A0C4C2A21093B00AABA86 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		DA0A0C4E2A21096C00AABA86 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA0A0C512A210A4E00AABA86 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DA0A0C542A21129600AABA86 /* ProfileStorageLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStorageLogic.swift; sourceTree = "<group>"; };
+		DA0A0C562A2112A700AABA86 /* ProfileStorageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStorageWorker.swift; sourceTree = "<group>"; };
+		DA0A0C582A211A6A00AABA86 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		DA0A0C5A2A211CFC00AABA86 /* UIImage+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +69,13 @@
 		DA0A0C332A21087500AABA86 /* ProfileExam */ = {
 			isa = PBXGroup;
 			children = (
+				DA0A0C532A21127A00AABA86 /* ProfileStorage */,
+				DA0A0C502A210A3D00AABA86 /* Controllers */,
+				DA0A0C4F2A210A3900AABA86 /* Views */,
 				DA0A0C4B2A21093200AABA86 /* Models */,
 				DA0A0C4A2A2108F700AABA86 /* Extensions */,
 				DA0A0C342A21087500AABA86 /* AppDelegate.swift */,
 				DA0A0C362A21087500AABA86 /* SceneDelegate.swift */,
-				DA0A0C382A21087500AABA86 /* ProfileViewController.swift */,
 				DA0A0C3D2A21087600AABA86 /* Assets.xcassets */,
 				DA0A0C3F2A21087600AABA86 /* LaunchScreen.storyboard */,
 				DA0A0C422A21087600AABA86 /* Info.plist */,
@@ -76,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0A0C482A2108F300AABA86 /* UIView+Pin.swift */,
+				DA0A0C5A2A211CFC00AABA86 /* UIImage+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -86,6 +99,32 @@
 				DA0A0C4C2A21093B00AABA86 /* ProfileModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DA0A0C4F2A210A3900AABA86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA0A0C512A210A4E00AABA86 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA0A0C502A210A3D00AABA86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA0A0C382A21087500AABA86 /* ProfileViewController.swift */,
+				DA0A0C582A211A6A00AABA86 /* ImagePickerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA0A0C532A21127A00AABA86 /* ProfileStorage */ = {
+			isa = PBXGroup;
+			children = (
+				DA0A0C542A21129600AABA86 /* ProfileStorageLogic.swift */,
+				DA0A0C562A2112A700AABA86 /* ProfileStorageWorker.swift */,
+			);
+			path = ProfileStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0A0C4D2A21093B00AABA86 /* ProfileModel.swift in Sources */,
+				DA0A0C592A211A6A00AABA86 /* ImagePickerController.swift in Sources */,
 				DA0A0C392A21087500AABA86 /* ProfileViewController.swift in Sources */,
 				DA0A0C352A21087500AABA86 /* AppDelegate.swift in Sources */,
 				DA0A0C492A2108F300AABA86 /* UIView+Pin.swift in Sources */,
+				DA0A0C552A21129600AABA86 /* ProfileStorageLogic.swift in Sources */,
+				DA0A0C572A2112A700AABA86 /* ProfileStorageWorker.swift in Sources */,
+				DA0A0C522A210A4E00AABA86 /* ProfileView.swift in Sources */,
+				DA0A0C5B2A211CFC00AABA86 /* UIImage+String.swift in Sources */,
 				DA0A0C372A21087500AABA86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +345,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J58STCQ74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProfileExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -327,6 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J58STCQ74;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProfileExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

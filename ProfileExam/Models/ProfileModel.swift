@@ -7,20 +7,29 @@
 
 import Foundation
 
-public struct Profile {
-    let avatar: String? // Аватар
-    let name: String // Имя
-    let surname: String // Фамилия
+public struct ProfileModel {
+    let avatar: String?// Аватар
+    let firstName: String // Имя
+    let secondName: String // Фамилия
     let middleName: String // Отчество
     let alias: String // Никнейм
     let mail: String // Имейл
     let phone: String // Телефон
     let telegram: String // Телеграм
 
-    public init(avatar: String?, name: String, surname: String, middleName: String, alias: String, mail: String, phone: String, telegram: String) {
+    public init(
+        avatar: String? = nil,
+        firstName: String = "",
+        secondName: String = "",
+        middleName: String = "",
+        alias: String = "",
+        mail: String = "",
+        phone: String = "",
+        telegram: String = ""
+    ) {
         self.avatar = avatar
-        self.name = name
-        self.surname = surname
+        self.firstName = firstName
+        self.secondName = secondName
         self.middleName = middleName
         self.alias = alias
         self.mail = mail
